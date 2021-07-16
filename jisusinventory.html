@@ -3,17 +3,11 @@
 		body {
 			background: linear-gradient(#1cc9b8, #9723fc, #FFC0CB, #0000FF);
 			padding: 100px 100px 100px 100px;
-			height: 7500px;
-		}
-		@media only screen and (max-width: 600px) {
-		  body {
-		    padding: 20px 20px 20px 20px;
-		    height: 9000px;
-		  }
+			height: 6500px;
 		}
 		p {
 			font-family:  helvetica;
-			font-size: 1.3em;
+			font-size: 1.5em;
 			color: white;
 		}
 		h1 {
@@ -35,15 +29,13 @@
 		    text-align:left;
 		}
 		.tooltip .description {
-		    min-width:200px;
-		    max-width:400px;
-		    top:75px;
+		    top:50%;
 		    left:50%;
-		    transform:translate(-50%,0);
+		    transform:translate(-50%,-50%);
 		    padding:10px 20px;
 		    color:#ffffff;
-		    /*background: linear-gradient(#1cc9b8, #9723fc);*/
-		    background:  transparent;
+		    background: linear-gradient(#1cc9b8, #9723fc);
+		    /*background:  transparent;*/
 		    position:absolute;
 		    z-index:3;
 		    box-sizing:border-box;
