@@ -1,0 +1,188 @@
+<head>
+	<style>
+		body {
+			background: linear-gradient(#1cc9b8, #9723fc, #FFC0CB, #0000FF);
+			padding: 100px 100px 100px 100px;
+			height: 7500px;
+		}
+		p {
+			font-family:  helvetica;
+			font-size: 1em;
+			color: white;
+		}
+		h1 {
+			font-family:  helvetica;
+			font-size: 2em;
+			color: white;
+		}
+		h2 {
+			font-family:  helvetica;
+			font-size: 1.5em;
+			color: white;
+		}
+		img {
+		}
+		.tooltip {
+		    display:inline-block;
+		    position:relative;
+		    text-align:left;
+		    height: 40px;
+		}
+		.tooltip .description {
+		    min-width:200px;
+		    max-width:400px;
+		    top:75px;
+		    left:50%;
+		    transform:translate(-50%,0);
+		    padding:10px 20px;
+		    color:#ffffff;
+		    /*background: linear-gradient(#1cc9b8, #9723fc);*/
+		    background:  transparent;
+		    position:absolute;
+		    z-index:3;
+		    box-sizing:border-box;
+		    display:none;
+		    text-align: center;
+		}
+		.tooltip:hover .description {
+		    display:block;
+		}
+		#div2 {
+			transform: translateY(500px);
+		}
+		#div3 {
+			transform: translateY(1250px);
+		}
+		#div4 {
+			transform: translateY(2000px);
+		}
+		#div5 {
+			transform: translateY(2450px);
+		}
+		#div6 {
+			transform: translateY(2900px);
+		}
+		#div7 {
+			transform: translateY(3350px);
+		}
+		#div8 {
+			transform: translateY(3800px);
+		}
+		#div9 {
+			transform: translateY(4250px);
+		}
+		#div10 {
+			transform: translateY(4900px);
+		}
+		#div11 {
+			transform: translateY(5550px);
+		}
+		#div12 {
+			transform: translateY(6000px);
+		}
+	</style>
+</head>
+<body>
+	<div align="center">
+		<h1>
+			<i>JISU'S PIECES:</i>
+			<br><br>
+			All pieces are available for sale or rent. Rental prices are per season, or 3 months (winter, spring, summer, fall—rental period doesn't have to start at the beginning of the season).
+			<br>
+			<br>
+		</h1>
+		<h2>
+			If you need something shipped, we'll add the shipping cost to your order.
+			<br><br>
+		</h2>
+		<h2>
+			Hover or tap (if you're on a phone) to see prices.
+			<br><br>
+		</h2>
+	</div>
+	<div align="center">
+		<div class="tooltip">
+			<img height="450px" src="eyes-1.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Eyes series.<br><br>$200 each.<br>(per canvas—there are two canvases in the picture.)<br><br>$20 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div2">
+			<img height="700px" src="eyes-2.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Eyes series.<br><br>$200 each.<br>(per canvas—there are three canvases in the picture) or $450 for all three.<br><br>$20 rental per canvas, $40 rental for all three.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div3">
+			<img height="700px" src="eye-cube.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Communication.<br><br>$750 or $40 rental.<br><br>This is a double-sided piece.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div4">
+			<img height="400px" src="face-1.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Gwishin series.<br><br>$200.<br><br>$20 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div5">
+			<img height="400px" src="face-2.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Gwishin series.<br><br>$200.<br><br>$20 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div6">
+			<img height="400px" src="face-3.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Gwishin series.<br><br>$200 each.<br>(per canvas—there are two canvases in the picture.)<br><br>$20 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div7">
+			<img height="400px" src="kulis-back.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Kulisback series.<br><br>$500 for each board in the series. Six boards total.<br>$750 for all six boards.<br><br>$20 rental per board, $40 rental for all six.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div8">
+			<img height="400px" src="kulis-back-2.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Kulisback series.<br><br>$500 for each board in the series. Six boards total.<br>$750 for all six boards.<br><br>$20 rental per board, $40 rental for all six.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div9">
+			<img height="600px" src="self.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Self.<br><br>$500.<br><br>$40 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div10">
+			<img height="600px" src="blue.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Blue.<br><br>$500.<br><br>$40 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div11">
+			<img height="400px" src="little-face-1.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Small Gwishin series.<br><br>$40.<br><br>$10 rental.</i></p>
+			</div>
+		</div>
+		<br>
+		<div class="tooltip" id="div12">
+			<img height="400px" src="hands.jpeg" />
+			<div class="description" style="text-align: left;">
+				<p><i>Hands.<br><br>$450.<br><br>$20 rental.</i></p>
+			</div>
+		</div>
+	</div>
+</body>
