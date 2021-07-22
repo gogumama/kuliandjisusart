@@ -20,6 +20,47 @@
 	hr {
 		border:  2px solid white;
 	}
+	#redcc {
+	     
+      	position: absolute;
+
+
+
+	     animation: 0.5s spin linear forwards infinite;
+			transform-origin: center;
+			animation-play-state: paused;
+			animation-delay:  calc(var(--scroll)* -1s);
+			position: relative;/*kuli isgreat =kulisgreat...  */
+
+		}
+
+
+		@keyframes gogo {
+			from {
+				transform: translateX(-500px);
+			}
+			to {
+				transform: translateX(1300px);
+			}
+		}
+		@keyframes spin {
+			from {transform: rotateZ(0deg);
+
+			}
+			to {transform: rotateZ(360deg);
+
+				 }
+			}
+       #group1 {
+       	animation: 1.4s gogo linear alternate infinite;
+			transform-origin: center;
+			animation-play-state: paused;
+			animation-delay:  calc(var(--scroll)* -1s);
+			position: relative;/*cube isgreat */
+       }
+       #bigga {
+       	width: 100%;
+       }
 	</style>
 </head>
 <body>
@@ -38,7 +79,13 @@
 		<br>
 		<br>
 		Email me at jisusheen@gmail.com if you're interested in a piece, and send a picture if possible.</p>
-		<hr>
+		<svg id="bigga" width="800" height="300" viewBox="0 0 800 300" fill="black" xmlns="http://www.w3.org/2000/svg">
+			<g id="Group1">
+				<ellipse id="redcc" cx="308.5" cy="217" rx="20" ry="39" fill="#A51010"/>
+			</g>
+			<!-- jisu was here-->
+
+		</svg>
 		<p>
 		<b>Message from Kuli — <a href="http://kulimushibarongozi.com">kulimushibarongozi.com</a>.</b><br><br>
 		If you want to buy any piece of art in this show. (You can get ANY piece) <br><br>
@@ -60,4 +107,15 @@
 	</p>
 	<br>
 	<br>
+	<script>
+	window.addEventListener(
+		"scroll",
+		() => {
+			document.body.style.setProperty(
+				"--scroll",
+				window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+				);
+		}, false
+		);
+</script>
 </body>
