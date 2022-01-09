@@ -1,0 +1,99 @@
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			height: 1200px;
+			background: #BF592D;
+		}
+		#donut {
+			animation: bounce 5s ease-in-out alternate infinite;
+		}
+		@keyframes bounce {
+			from {transform: translateY(50px)}
+			to {
+				transform: translateY(-100px);
+			}
+		}
+		#donut-top {
+			animation: top-morph 4s ease-in-out alternate infinite;
+		}
+		@keyframes top-morph {
+			0% {}
+			100% {
+				d: path('M508.5 246.5C277.54 206.57 231.795 379.64 464.5 416.5C777 466 763 290.5 508.5 246.5Z');
+			}
+		}
+		#donut-middle {
+			animation: middle-morph 4s ease-in-out alternate infinite;
+		}
+		@keyframes middle-morph {
+			0% {}
+			100% {
+				d: path('M313 327.5C330.5 443.5 690.5 497 698.5 365C702.998 290.779 297.07 221.904 313 327.5Z');
+			}
+		}
+		#donut-bottom {
+			animation: bottom-morph 4s ease-in-out alternate infinite;
+		}
+		@keyframes bottom-morph {
+			0% {}
+			100% {
+				d: path('M313 325C324.573 453.209 689.5 508.5 696.5 368C699.928 299.188 303.463 219.347 313 325Z');
+			}
+		}
+
+		/* (A) FIXED WRAPPER */
+		.hwrap {
+		  overflow: hidden; /* HIDE SCROLL BAR */
+		  background: none;
+		  transform: translateY(-350px);
+		}
+		 
+		/* (B) MOVING TICKER WRAPPER */
+		.hmove { display: flex; }
+
+		/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+		.hitem {
+		  flex-shrink: 0;
+		  width: 100%;
+		  box-sizing: border-box;
+		  padding: 10px;
+		  text-align: center;
+		  font-family: 'Syncopate', sans-serif;
+		  font-size: 4em;
+		  font-weight: 600;
+		}
+		 
+		/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+		/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+		@keyframes tickerh {
+		  0% { transform: translate3d(100%, 0, 0); }
+		  100% { transform: translate3d(-300%, 0, 0); }
+		}
+		.hmove { animation: tickerh linear 45s infinite; }
+		.hmove:hover { animation-play-state: paused; }
+	</style>
+</head>
+<body>
+	<div align="center">
+	<svg width="958" height="674" viewBox="0 0 958 674" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g id="scene">
+		<rect id="background" width="958" height="674" fill="#BF592D"/>
+		
+		<g id="donut">
+		<path id="donut-bottom" d="M312 416C335 564 710.5 451 672 303C651.652 224.781 293.915 299.629 312 416Z" fill="#F3D97D"/>
+		<path id="donut-middle" d="M312 416C337.987 546.5 695.578 445.5 673.5 304C661.04 224.144 289 300.5 312 416Z" fill="#FFFBA3"/>
+		<path id="donut-top" d="M435.823 254.704C285.436 308.529 233.554 520.147 495.314 438.472C822.514 336.379 638.092 182.311 435.823 254.704Z" fill="#DAA847"/>
+		</g>
+		</g>
+	</svg>
+	<div class="hwrap"><div class="hmove">
+	  <div class="hitem"><b>SECOND FLOOR DONUTS</b></div>
+	  <div class="hitem"><b>SECOND FLOOR DONUTS</b></div>
+	  <div class="hitem"><b>SECOND FLOOR DONUTS</b></div>
+	</div></div>
+	</div>
+
+</body>
