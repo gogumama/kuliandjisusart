@@ -6,6 +6,9 @@
 		body {
 			margin: 0;
 		}
+		iframe {
+		  aspect-ratio: 16/9;
+		}
 		a {
 			color: black;
 			text-decoration: none;
@@ -15,15 +18,26 @@
 		}
 		h1 {
 			font-family: 'Helvetica', sans-serif;
-			font-size: 10vw;
+			font-size: 6vw;
 			text-transform: uppercase;
-			line-height: 0.3;
+			line-height: 0.4;
+		}
+		h1:hover {
+			font-family: 'Helvetica', sans-serif;
+			font-size: 4.19vw;
+			text-transform: uppercase;
+			line-height: 0.9;
+		}
+		h1:active {
+			font-family: 'Helvetica', sans-serif;
+			font-size: 4.19vw;
+			text-transform: uppercase;
+			line-height: 0.9;
 		}
 		h2 {
-			font-family: 'BioRhyme Expanded', serif;
-			font-size: 10vw;
-			text-transform: uppercase;
-			line-height: 0.3;
+			font-family: 'Helvetica', sans-serif;
+			font-size: 4vw;
+			line-height: 1;
 		}
 		h3 {
 			font-family: 'Bungee Shade', cursive;
@@ -40,14 +54,129 @@
 		.headliner {
 			width: 100%;
 		}
+		.halfliner {
+			width: 50%;
+		}
+		#donut {
+			animation: bounce 5s ease-in-out alternate infinite;
+		}
+		@keyframes bounce {
+			from {transform: translateY(50px)}
+			to {
+				transform: translateY(-100px);
+			}
+		}
+		#donut-top {
+			animation: top-morph 4s ease-in-out alternate infinite;
+		}
+		@keyframes top-morph {
+			0% {}
+			100% {
+				d: path('M508.5 246.5C277.54 206.57 231.795 379.64 464.5 416.5C777 466 763 290.5 508.5 246.5Z');
+			}
+		}
+		#donut-middle {
+			animation: middle-morph 4s ease-in-out alternate infinite;
+		}
+		@keyframes middle-morph {
+			0% {}
+			100% {
+				d: path('M313 327.5C330.5 443.5 690.5 497 698.5 365C702.998 290.779 297.07 221.904 313 327.5Z');
+			}
+		}
+		#donut-bottom {
+			animation: bottom-morph 4s ease-in-out alternate infinite;
+		}
+		@keyframes bottom-morph {
+			0% {}
+			100% {
+				d: path('M313 325C324.573 453.209 689.5 508.5 696.5 368C699.928 299.188 303.463 219.347 313 325Z');
+			}
+		}
+
+		/* (A) FIXED WRAPPER */
+		.hwrap {
+		  overflow: hidden; /* HIDE SCROLL BAR */
+		  background: none;
+		}
+		 
+		/* (B) MOVING TICKER WRAPPER */
+		.hmove { display: flex; }
+
+		/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+		.hitem {
+		  flex-shrink: 0;
+		  width: 80%;
+		  box-sizing: border-box;
+		  padding: 100px;
+		  text-align: center;
+		  font-family: 'Helvetica', sans-serif;
+		  font-size: 4.19vw;
+		  font-weight: 600;
+		}
+		 
+		/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+		/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+		@keyframes tickerh {
+		  0% { transform: translate3d(100%, 0, 0); }
+		  100% { transform: translate3d(-300%, 0, 0); }
+		}
+		.hmove { animation: tickerh linear 60s infinite; }
 	</style>
 </head>
 <body>
-	<img class="headliner" src="yellowyellow.jpg"/>
-	<div style="height: 100%; margin-top: -100%; margin-left: 17%" align="left">
-		<h3><a href="http://kulimushiandjisu.com/show">2nd</a></h3>
-		<h3><a href="http://kulimushiandjisu.com/ttte">Floor</a></h3>
-		<h3><a href="http://kulimushiandjisu.com/notes">Hardware</a></h3>
-		<h3><a href="http://kulimushiandjisu.com/pictures">School</a></h3>
+	<div>
+		<img class="headliner" src="yellowyellow.jpg"/>
+		<div style="margin-top: -100%; margin-left: 17%" align="left">
+			<h3><a href="http://kulimushiandjisu.com/show">2nd</a></h3>
+			<h3><a href="http://kulimushiandjisu.com/ttte">Floor</a></h3>
+			<h3><a href="http://kulimushiandjisu.com/notes">Hardware</a></h3>
+			<h3><a href="http://kulimushiandjisu.com/pictures">School</a></h3>
+		</div>
 	</div>
+	<div style="margin-top: 58%; margin-left: 5%; margin-right: 5%; margin-bottom: 5%">
+		<h1>We paint, but painting just happens to be the medium we often use. Kuli is a performer; he performs paintings. Jisu is a theorist; her paintings are studies. Together, we are exploring our art through the medium of the show itself.</h1>
+	</div>
+	<div>
+		<img class="headliner" src="straw-kuli.jpg"/>
+	</div>
+	<div style="margin-top: 5%; margin-left: 5%; margin-right: 5%; margin-bottom: 5%;">
+		<h2>We are working on a series of pop-up art shows with a long-term vision of having a place of our own. We thought of these pop-ups because we wanted a show that could feel alive. Each one would happen in a different scene, with different surroundings.</h2>
+	</div>
+	<div>
+		<img class="headliner" src="blurry-jisu.JPEG"/>
+	</div>
+	<div style="margin-top: 5%; margin-left: 15%; margin-right: 5%; margin-bottom: 5%;">
+		<h2>Our art, setup, and events in each pop-up space would reflect and engage these differences rather than try to flatten them for a perfect reproduction.</h2>
+	</div>
+	<div align="center" style="background: #BF592D;">
+	<svg width="100%" viewBox="0 0 958 674" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g id="scene">
+		<rect id="background" width="958" height="674" fill="#BF592D"/>
+		
+		<g id="donut">
+		<path id="donut-bottom" d="M312 416C335 564 710.5 451 672 303C651.652 224.781 293.915 299.629 312 416Z" fill="#F3D97D"/>
+		<path id="donut-middle" d="M312 416C337.987 546.5 695.578 445.5 673.5 304C661.04 224.144 289 300.5 312 416Z" fill="#FFFBA3"/>
+		<path id="donut-top" d="M435.823 254.704C285.436 308.529 233.554 520.147 495.314 438.472C822.514 336.379 638.092 182.311 435.823 254.704Z" fill="#DAA847"/>
+		</g>
+		</g>
+	</svg>
+	<div class="hwrap" style="margin-top: -50%"><div class="hmove">
+	  <div class="hitem"><b>These shows are about how our art interacts with the audience.</b></div>
+	  <div class="hitem"><b>How can we give people a chance to really look at art?</b></div>
+	  <div class="hitem"><b>And spend time with art, see how other art forms can interact with it?</b></div>
+	</div></div>
+	</div>
+	<div>
+	</div>
+	<div style="margin-top: 0%">
+		<iframe width="100%" src="https://www.youtube.com/embed/4ZGiaK8UCO0?autoplay=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div style="margin-top: 5%; margin-left: 25%; margin-right: 5%; margin-bottom: 5%;">
+		<h2>We are trying to push the envelope for other artists as well as ourselves.</h2>
+	</div>
+	<div>
+		<img class="headliner" src="maman.jpeg" />
+	</div>
+
 </body>
