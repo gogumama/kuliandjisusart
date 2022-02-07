@@ -3,6 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="pinkicon.ico"/>
 	<style>
+
 		@media only screen and (max-width: 600px) {
 		  img {
 		    width: 50%;
@@ -20,24 +21,86 @@
 		img:hover {
 			opacity: 60%;
 		}
+		h1 {
+			font-family: helvetica;
+			font-size: 3em;
+			color: white;
+			line-height: 1em;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: black;
+		}
+		#left {
+			position: fixed;
+			margin-left: 20px;
+			top: 50%;
+			margin-top: -150px;
+			height: 300px;
+		}
+		#right {
+			position: fixed;
+
+			top: 50%;
+			margin-top: -150px;
+			height: 300px;
+
+			width: 100%;
+			text-align: right;
+			pointer-events: none;
+		}
+		#inner-right {
+			position: relative;
+			float: right;
+			margin-right: 20px;
+			pointer-events: auto;
+		}
 	</style>
 </head>
 <body>
-	<!--ABOVE THE FOLD-->
-	<div>
-		<img src="zombie.jpeg" width="33.333%"/>
-		<img src="witch.jpeg" width="33.333%"/>
-		<img src="gumdrop.jpeg" width="33.333%"/>
+	<div height="100%">
+		<div>
+			<img src="zombie.jpeg" width="33.333%"/>
+			<img src="witch.jpeg" width="33.333%"/>
+			<img src="gumdrop.jpeg" width="33.333%"/>
+		</div>
+		<div>
+			<img src="fire.jpeg" width="25%"/>
+			<img src="astronaut.jpeg" width="25%"/>
+			<img src="half.jpeg" width="25%"/>
+			<img src="bored.jpeg" width="25%"/>
+		</div>
+		<div>
+			<img src="shiny.jpeg" width="33.333%" loading="lazy"/>
+			<img src="superbored.jpeg" width="33.333%" loading="lazy"/>
+			<img src="baby.jpeg" width="33.333%" loading="lazy"/>
+		</div>
 	</div>
-	<div>
-		<img src="fire.jpeg" width="25%"/>
-		<img src="astronaut.jpeg" width="25%"/>
-		<img src="half.jpeg" width="25%"/>
-		<img src="bored.jpeg" width="25%"/>
+	<div id="left">
+		<h1>
+			<a href="http://kulimushiandjisu.com/gallery-green">
+				G<br>
+				R<br>
+				E<br>
+				E<br>
+				N
+			</a>
+		</h1>
 	</div>
-	<div>
-		<img src="shiny.jpeg" width="33.333%" loading="lazy"/>
-		<img src="superbored.jpeg" width="33.333%" loading="lazy"/>
-		<img src="baby.jpeg" width="33.333%" loading="lazy"/>
+	<div id="right">
+		<div id="inner-right">
+			<h1>
+				<a href="http://kulimushiandjisu.com/gallery-green">
+					B<br>
+					O<br>
+					A<br>
+					R<br>
+					D
+				</a>
+			</h1>
+		</div>
 	</div>
 </body>
