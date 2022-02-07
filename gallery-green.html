@@ -20,6 +20,43 @@
 		img:hover {
 			opacity: 60%;
 		}
+		h1 {
+			font-family: helvetica;
+			font-size: 3em;
+			color: white;
+			line-height: 1em;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: black;
+		}
+		#left {
+			position: fixed;
+			margin-left: 20px;
+			top: 50%;
+			margin-top: -150px;
+			height: 300px;
+		}
+		#right {
+			position: fixed;
+
+			top: 50%;
+			margin-top: -150px;
+			height: 300px;
+
+			width: 100%;
+			text-align: right;
+			pointer-events: none;
+		}
+		#inner-right {
+			position: relative;
+			float: right;
+			margin-right: 20px;
+			pointer-events: auto;
+		}
 	</style>
 </head>
 <body>
@@ -31,10 +68,10 @@
 		<img src="follow.jpeg" width="25%"/>
 	</div>
 	<div>
-		<img src="food.jpeg" width="33.3%"/>
-		<img src="getintouch.jpeg" width="33.3%"/>
+		<img src="food.jpeg" width="33.33%"/>
+		<img src="getintouch.jpeg" width="33.33%"/>
 		<!--BELOW THE FOLD ON MOBILE-->
-		<img src="lovely.jpeg" width="33.3%"/>
+		<img src="lovely.jpeg" width="33.33%"/>
 	</div>
 	<!--BELOW THE FOLD ON DESKTOP-->
 	<div>
@@ -43,5 +80,28 @@
 		<img src="purple.jpeg" width="20%" loading="lazy"/>
 		<img src="purple-back.jpeg" width="20%" loading="lazy"/>
 		<img src="blind-feet.jpeg" width="20%" loading="lazy"/>
+	</div>
+	<div id="left">
+		<h1>
+			<a href="http://kulimushiandjisu.com/">
+				H<br>
+				O<br>
+				M<br>
+				E
+			</a>
+		</h1>
+	</div>
+	<div id="right">
+		<div id="inner-right">
+			<h1>
+				<a href="http://kulimushiandjisu.com/gallery-floor">
+					F<br>
+					L<br>
+					O<br>
+					O<br>
+					R
+				</a>
+			</h1>
+		</div>
 	</div>
 </body>
