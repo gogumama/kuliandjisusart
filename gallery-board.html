@@ -1,0 +1,112 @@
+<head>
+	<title>Board Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="pinkicon.ico"/>
+	<style>
+
+		@media only screen and (max-width: 600px) {
+		  img {
+		    width: 50%;
+		  }
+		}
+		body {
+			background: white;
+			margin: 0;
+		}
+		img {
+			margin: 0;
+			border: 0;
+			float: left;
+		}
+		img:hover {
+			opacity: 60%;
+		}
+		h1 {
+			font-family: helvetica;
+			font-size: 3em;
+			color: black;
+			line-height: 1em;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: black;
+		}
+		#left {
+			position: fixed;
+			margin-left: 20px;
+			top: 50%;
+			margin-top: -150px;
+			height: 300px;
+		}
+		#right {
+			position: fixed;
+
+			top: 50%;
+			margin-top: -150px;
+			height: 300px;
+
+			width: 100%;
+			pointer-events: none;
+		}
+		#inner-right {
+			position: relative;
+			float: right;
+			text-align: left;
+			margin-right: 20px;
+			pointer-events: auto;
+		}
+		#current {
+			margin-left: 20px;
+			margin-top: 20px;
+			margin-bottom: -15px;
+		}
+	</style>
+</head>
+<body>
+	<div id="current">
+		<h1>
+			BOARD
+		</h1>
+	</div>
+	<div height="100%">
+		<div>
+			<img src="top.jpeg" width="50%"/>
+			<img src="back.jpeg" width="50%"/>
+		</div>
+		<div>
+			<img src="front.jpeg" width="50%"/>
+			<img src="left.jpeg" width="50%"/>
+		</div>
+		<div>
+			<img src="right.jpeg" width="50%" loading="lazy"/>
+			<img src="bottom.jpeg" width="50%" loading="lazy"/>
+		</div>
+	</div>
+	<div id="left">
+		<h1>
+			<a href="http://kulimushiandjisu.com/gallery-floor">
+				F<br>
+				L<br>
+				O<br>
+				O<br>
+				R
+			</a>
+		</h1>
+	</div>
+	<div id="right">
+		<div id="inner-right">
+			<h1>
+				<a href="http://kulimushiandjisu.com/">
+					H<br>
+					O<br>
+					M<br>
+					E
+				</a>
+			</h1>
+		</div>
+	</div>
+</body>
+</body>
