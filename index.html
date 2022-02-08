@@ -6,8 +6,59 @@
 		body {
 			margin: 0;
 		}
+		h1 {
+			font-family: helvetica;
+			font-size: 3em;
+			color: black;
+			line-height: 1em;
+		}
+		h2 {
+			font-family: helvetica;
+			font-size: 2em;
+			color: black;
+			line-height: 1em;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: black;
+		}
+		#center {
+			position: absolute;
+			align: center;
+			top: 50%;
+		}
+		#current {
+			margin-left: 20px;
+			margin-top: 20px;
+			margin-bottom: -15px;
+		}
+		#main {
+			background: linear-gradient(pink, hotpink);
+			height: 100%;
+		}
+		#words {
+			position: relative;
+			text-align: center;
+			top: 50%;
+		}
 	</style>
 </head>
 <body>
-	<img width="100%" src="cube-show.jpeg">
+	<div id="current">
+		<h1>
+			HOME
+		</h1>
+	</div>
+	<div id="main" style="position: relative" text-align="center">
+		<div id="words">
+			<h2>
+				<a href="http://kulimushiandjisu.com/gallery-green">
+					HOWDY!
+				</a>
+			</h2>
+		</div>
+	</div>
 </body>
