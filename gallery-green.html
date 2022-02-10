@@ -4,7 +4,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="pinkicon.ico"/>
 	<style>
 		@media only screen and (max-width: 600px) {
-		  img {
+		  .tooltip {
 		    width: 100%;
 		  }
 		}
@@ -16,6 +16,7 @@
 			margin: 0;
 			border: 0;
 			float: left;
+			cursor: pointer;
 		}
 		img:hover {
 			opacity: 60%;
@@ -23,6 +24,12 @@
 		h1 {
 			font-family: helvetica;
 			font-size: 3em;
+			color: black;
+			line-height: 1em;
+		}
+		h2 {
+			font-family: helvetica;
+			font-size: 1em;
 			color: black;
 			line-height: 1em;
 		}
@@ -63,6 +70,25 @@
 			margin-top: 20px;
 			margin-bottom: -15px;
 		}
+		.tooltip {
+		    position:relative;
+		    text-align:left;
+		    align-content: right;
+		    display:inline-block;
+		    float: left;
+		}
+		.tooltip .description {
+		    background: transparent;
+		    position: absolute;
+		    z-index:3;
+		    display:none;
+		    text-align: left;
+		    margin: 20px;
+		    float: left;
+		}
+		.tooltip:hover .description {
+		    display:block;
+		}
 	</style>
 </head>
 <body>
@@ -73,24 +99,96 @@
 		</h1>
 	</div>
 	<div>
-		<img src="used-pi-the-walls-have-ears.jpeg" width="25%"/>
-		<img src="000.jpeg" width="25%"/>
-		<img src="000-back.jpeg" width="25%"/>
-		<img src="follow.jpeg" width="25%"/>
+		<div class="tooltip" style="width:25%">
+			<img src="used-pi-the-walls-have-ears.jpeg" width="100%"/>
+			<div class="description">
+				<h2>Used Pi The Walls Have Ears<br>
+				65x42 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:25%">
+			<img src="000.jpeg" width="100%"/>
+			<div class="description">
+				<h2>000<br>
+				26x32 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:25%">
+			<img src="000-back.jpeg" width="100%"/>
+			<div class="description">
+				<h2>000 (back side)<br>
+				26x32 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:25%">
+			<img src="follow.jpeg" width="100%"/>
+			<div class="description">
+				<h2>Follow<br>
+				65x42 in</h2>
+			</div>
+		</div>
 	</div>
 	<div>
-		<img src="food.jpeg" width="33.33%"/>
-		<img src="getintouch.jpeg" width="33.33%"/>
+		<div class="tooltip" style="width:33.33%">
+			<img src="food.jpeg" width="100%"/>
+			<div class="description">
+				<h2>Food<br>
+				65x42 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:33.33%">
+			<img src="getintouch.jpeg" width="100%"/>
+			<div class="description">
+				<h2>Get in Touch<br>
+				48x36 in</h2>
+			</div>
+		</div>
 		<!--BELOW THE FOLD ON MOBILE-->
-		<img src="lovely.jpeg" width="33.33%"/>
+		<div class="tooltip" style="width:33.33%">
+			<img src="lovely.jpeg" width="100%"/>
+			<div class="description">
+				<h2>Lovely<br>
+				65x42 in</h2>
+			</div>
+		</div>
 	</div>
 	<!--BELOW THE FOLD ON DESKTOP-->
 	<div>
-		<img src="penis.jpeg" width="20%" loading="lazy"/>
-		<img src="penis-back.jpeg" width="20%" loading="lazy"/>
-		<img src="purple.jpeg" width="20%" loading="lazy"/>
-		<img src="purple-back.jpeg" width="20%" loading="lazy"/>
-		<img src="blind-feet.jpeg" width="20%" loading="lazy"/>
+		<div class="tooltip" style="width:20%">
+			<img src="penis.jpeg" width="100%" loading="lazy"/>
+			<div class="description">
+				<h2>Penis<br>
+				65x42 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:20%">
+			<img src="penis-back.jpeg" width="100%" loading="lazy"/>
+			<div class="description">
+				<h2>Penis (back)<br>
+				65x42 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:20%">
+			<img src="purple.jpeg" width="100%" loading="lazy"/>
+			<div class="description">
+				<h2>Purple<br>
+				65x42 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:20%">
+			<img src="purple-back.jpeg" width="100%" loading="lazy"/>
+			<div class="description">
+				<h2>Purple (back)<br>
+				65x42 in</h2>
+			</div>
+		</div>
+		<div class="tooltip" style="width:20%">
+			<img src="blind-feet.jpeg" width="100%" loading="lazy"/>
+			<div class="description">
+				<h2>Blind Feet<br>
+				108x80 in</h2>
+			</div>
+		</div>
 	</div>
 	<div id="left">
 		<h1>
