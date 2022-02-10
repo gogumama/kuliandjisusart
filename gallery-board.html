@@ -5,7 +5,7 @@
 	<style>
 
 		@media only screen and (max-width: 600px) {
-		  img {
+		  body .half {
 		    width: 100%;
 		  }
 		}
@@ -19,11 +19,17 @@
 			float: left;
 		}
 		img:hover {
-			opacity: 60%;
+			opacity: 40%;
 		}
 		h1 {
 			font-family: helvetica;
 			font-size: 3em;
+			color: black;
+			line-height: 1em;
+		}
+		h2 {
+			font-family: helvetica;
+			font-size: 1em;
 			color: black;
 			line-height: 1em;
 		}
@@ -63,6 +69,29 @@
 			margin-top: 20px;
 			margin-bottom: -15px;
 		}
+		.tooltip {
+		    position:relative;
+		    text-align:left;
+		    align-content: right;
+		    display:inline-block;
+		    float: left;
+		}
+		.half {
+		    width: 50%;
+		}
+		.tooltip .description {
+		    background: transparent;
+		    position: absolute;
+		    z-index:3;
+		    display:none;
+		    text-align: left;
+		    margin: 20px;
+		    float: left;
+		    pointer-events: none;
+		}
+		.tooltip:hover .description {
+		    display:block;
+		}
 	</style>
 </head>
 <body>
@@ -73,16 +102,52 @@
 	</div>
 	<div height="100%">
 		<div>
-			<img src="top.jpeg" width="50%"/>
-			<img src="back.jpeg" width="50%"/>
+			<div class="tooltip half">
+				<img src="top.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Top<br>
+					Acrylic and gouache on board</h2>
+				</div>
+			</div>
+			<div class="tooltip half">
+				<img src="back.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Back<br>
+					Acrylic and gouache on board</h2>
+				</div>
+			</div>
 		</div>
 		<div>
-			<img src="front.jpeg" width="50%"/>
-			<img src="left.jpeg" width="50%"/>
+			<div class="tooltip half">
+				<img src="front.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Front<br>
+					Acrylic and gouache on board</h2>
+				</div>
+			</div>
+			<div class="tooltip half">
+				<img src="left.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Left<br>
+					Acrylic and gouache on board</h2>
+				</div>
+			</div>
 		</div>
 		<div>
-			<img src="right.jpeg" width="50%" loading="lazy"/>
-			<img src="bottom.jpeg" width="50%" loading="lazy"/>
+			<div class="tooltip half">
+				<img src="right.jpeg" width="100%" loading="lazy"/>
+				<div class="description">
+					<h2>Right<br>
+					Acrylic and gouache on board</h2>
+				</div>
+			</div>
+			<div class="tooltip half">
+				<img src="bottom.jpeg" width="100%" loading="lazy"/>
+				<div class="description">
+					<h2>Bottom<br>
+					Acrylic and gouache on board</h2>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="left">
