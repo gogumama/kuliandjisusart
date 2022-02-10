@@ -5,7 +5,7 @@
 	<style>
 
 		@media only screen and (max-width: 600px) {
-		  img {
+		  body .half, body .third {
 		    width: 100%;
 		  }
 		}
@@ -19,11 +19,17 @@
 			float: left;
 		}
 		img:hover {
-			opacity: 60%;
+			opacity: 40%;
 		}
 		h1 {
 			font-family: helvetica;
 			font-size: 3em;
+			color: black;
+			line-height: 1em;
+		}
+		h2 {
+			font-family: helvetica;
+			font-size: 1em;
 			color: black;
 			line-height: 1em;
 		}
@@ -40,6 +46,7 @@
 			top: 50%;
 			margin-top: -150px;
 			height: 300px;
+			z-index: 4;
 		}
 		#right {
 			position: fixed;
@@ -50,6 +57,7 @@
 
 			width: 100%;
 			pointer-events: none;
+			z-index: 5;
 		}
 		#inner-right {
 			position: relative;
@@ -63,6 +71,32 @@
 			margin-top: 20px;
 			margin-bottom: -15px;
 		}
+		.tooltip {
+		    position:relative;
+		    text-align:left;
+		    align-content: right;
+		    display:inline-block;
+		    float: left;
+		}
+		.half {
+		    width: 50%;
+		}
+		.third {
+			width: 33.333%;
+		}
+		.tooltip .description {
+		    background: transparent;
+		    position: absolute;
+		    z-index:3;
+		    display:none;
+		    text-align: left;
+		    margin: 20px;
+		    float: left;
+		    pointer-events: none;
+		}
+		.tooltip:hover .description {
+		    display:block;
+		}
 	</style>
 </head>
 <body>
@@ -73,20 +107,82 @@
 	</div>
 	<div height="100%">
 		<div>
-			<img src="zombie.jpeg" width="33.333%"/>
-			<img src="witch.jpeg" width="33.333%"/>
-			<img src="gumdrop.jpeg" width="33.333%"/>
+			<div class="tooltip third">
+				<img src="zombie.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Zombie<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
+			<div class="tooltip third" >
+				<img src="witch.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Witch<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
+			<div class="tooltip third">
+				<img src="gumdrop.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Gumdrop<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
 		</div>
 		<div>
-			<img src="fire.jpeg" width="25%"/>
-			<img src="astronaut.jpeg" width="25%"/>
-			<img src="half.jpeg" width="25%"/>
-			<img src="bored.jpeg" width="25%"/>
+			<div class="tooltip half">
+				<img src="fire.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Fire<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
+			<div class="tooltip half">
+				<img src="astronaut.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Astronaut<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
 		</div>
 		<div>
-			<img src="shiny.jpeg" width="33.333%" loading="lazy"/>
-			<img src="superbored.jpeg" width="33.333%" loading="lazy"/>
-			<img src="baby.jpeg" width="33.333%" loading="lazy"/>
+			<div class="tooltip half">
+				<img src="half.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Half<br>
+					Gouache on canvas board</h2>
+				</div>
+			</div>
+			<div class="tooltip half">
+				<img src="bored.jpeg" width="100%"/>
+				<div class="description">
+					<h2>Bored<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="tooltip third">
+				<img src="shiny.jpeg" width="100%" loading="lazy"/>
+				<div class="description">
+					<h2>Shiny<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
+			<div class="tooltip third">
+				<img src="superbored.jpeg" width="100%" loading="lazy"/>
+				<div class="description">
+					<h2>Superbored<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
+			<div class="tooltip third">
+				<img src="baby.jpeg" width="100%" loading="lazy"/>
+				<div class="description">
+					<h2>Baby<br>
+					Acrylic and gouache on canvas</h2>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="left">
