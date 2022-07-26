@@ -1,0 +1,85 @@
+<head>
+	<style>
+		#layout, #layout-map {
+			width: 100%;
+		}
+		body {
+			margin: 0px;
+			background: #8194FB;
+		}
+		h1 {
+			font-family: 'helvetica neue';
+		}
+		h2 {
+			font-family: 'helvetica neue';
+		}
+		p {
+			font-family: 'helvetica neue';
+		}
+		#outer {
+			width: 30%;
+			margin: 30px;
+			outline: 2px solid #00000000;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		#panel-left, #panel-right, #panel-back, #panel-front,
+			#canvas-back, #canvas-middle, #canvas-front
+			{
+			animation: color-shift 1s linear forwards;
+		}
+		@keyframes color-shift {
+			from {
+				fill: #6D80E3;
+			}
+			to {
+				fill: #D158BE;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<svg width="100%" viewBox="0 0 6587 3875" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g id="scene">
+			<rect id="background" x="35" y="20" width="6525" height="3852" fill="#8194FB"/>
+			<path id="wall-cable-front" d="M6418.5 631.5L6422 34" stroke="#F5F5F5" stroke-width="5" stroke-dasharray="20 20"/>
+			<path id="wall-cable-back" d="M5365.5 221L5367 34" stroke="#F5F5F5" stroke-width="5" stroke-dasharray="20 20"/>
+			<path id="canvas-front" d="M6560 3154H35V3872H6560V3154Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="stage-back-right" d="M4767 1361.5V0" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="stage-back-left" d="M1957 1360L1956 20" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="stage-front-left" d="M1720 1590V20" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="stage-front-right" d="M4958 1590V20" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="floor-left" d="M1724 1590L35 2770" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="floor-right" d="M4957.5 1590L6585 2548.5" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="floor-back" d="M14.5 1590H4959" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="stage" d="M1719.5 1508.5L1957 1360.5H4767.5L4956.5 1508.5H1719.5Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="canvas-back" d="M5182 1725C5384 1618.5 5384 695 5384 284.5L6334 676C6343.83 1143.33 6358.5 2216.82 6110 2320.5C5781.5 2457.55 2733 2381 951.5 2381L1671.5 1843.5C2842 1843.5 4980 1831.5 5182 1725Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="stick-large" d="M6477.5 734.5L5337 265.551V209L6477.5 661.5V734.5Z" stroke="#F5F5F5" stroke-width="5"/>
+			<path id="canvas-middle" d="M6558 3089.5H8L858.562 2451H5936.5L6558 2884V3089.5Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+			<rect id="screen" x="2118.5" y="22.5" width="2532" height="978" fill="#6D80E3" stroke="#F5F5F5" stroke-width="5"/>
+			<g id="inner">
+				<path id="panel-right" d="M3950.19 848L3622.5 573.5L3617.02 1979.5L3950.19 2380V848Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="panel-back" d="M2727.81 2161V657.5L3582.82 558V1974L2727.81 2161Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="panel-left" d="M3042.23 2643.91V1022.15L2695.81 683.459V2183.86L3042.23 2643.91Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="panel-front" d="M3968.95 896.384L3090.77 1047.53V2643.91L3968.95 2425.47V896.384Z" fill="#6D80E3" fill-opacity="0.74" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="stick-front" d="M3073.12 1045.32L3993.22 891.971V948.236L3073.12 1107.1V1045.32Z" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="stick-right" d="M3975.57 868.803L3604.88 557.5V598L3928.13 878.732L3975.57 868.803Z" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="stick-left" d="M2677.06 662.498L3067.6 1047.53V1114.82L2677.06 737.518V662.498Z" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="stick-back" d="M3600.47 555.484L2701.33 659.188L2739.94 696.698L3600.47 597.407V555.484Z" stroke="#F5F5F5" stroke-width="5"/>
+				<path id="cable-front-right" d="M3984.39 872.112L3976 34" stroke="#F5F5F5" stroke-width="5" stroke-dasharray="20 20"/>
+				<path id="cable-back-right" d="M3608.32 558.413L3605 27" stroke="#F5F5F5" stroke-width="5" stroke-dasharray="20 20"/>
+				<path id="cable-front-left" d="M3081.95 1047.53L3073 34" stroke="#F5F5F5" stroke-width="5" stroke-dasharray="20 20"/>
+				<path id="cable-back-left" d="M2672.65 650.362L2677 34" stroke="#F5F5F5" stroke-width="5" stroke-dasharray="20 20"/>
+			</g>
+			</g>
+		</svg>
+
+		<div id="outer">
+			<h2>2FHS Folk Festival modes of collaboration:</h2>
+			<h1><i>Material Art</i></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</body>
