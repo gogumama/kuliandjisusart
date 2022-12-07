@@ -1,5 +1,5 @@
 <head>
-	<title>Kuli + Jisu</title>
+	<title>2FHS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="pinkicon.ico"/>
 	<style>
@@ -31,6 +31,39 @@
 		a:hover {
 			color: black;
 		}
+		/* Container needed to position the button. Adjust the width as needed */
+		.container {
+		  position: relative;
+		  width: 100px;
+		}
+
+		/* Make the image responsive */
+		.container img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* Style the button and place it in the middle of the container/image */
+		.container .btn {
+		  position: absolute;
+		  top: 30%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  background-color: #FFFFFF00;
+		  color: white;
+		  font-size: 28px;
+		  padding: 12px 24px;
+		  border: none;
+		  cursor: pointer;
+		  border-radius: 5px;
+		}
+
+		.container .btn:hover {
+		  background-color: white;
+		  color: hotpink;
+		}
+
 		#center {
 			position: absolute;
 			align: center;
@@ -58,6 +91,32 @@
 		}
 		#all {
 			height: 100%;
+		}
+
+		#jisubutton {
+			animation: slide 20s linear alternate infinite;
+		}
+		#kulibutton {
+			animation: slide 20s linear alternate-reverse infinite;
+		}
+		#innerjisu {
+			animation: spin 20s linear forwards infinite;
+		}
+		#innerkuli {
+			animation: spin 20s linear forwards infinite -2s;
+		}
+		@keyframes slide {
+			0% {
+				transform: translate(30px);}
+			100% {
+				transform: translate(50px, -600px);
+			}
+		}
+		@keyframes spin {
+			0% {}
+			100% {
+				transform: rotateZ(360deg);
+			}
 		}
 	</style>
 </head>
@@ -103,6 +162,14 @@
 				</a>
 			</h2>
 
+		</div>
+		<div id="jisubutton" class="container">
+		  <img id="innerjisu" src="jisu-transparent.png" alt="Jisu">
+		  <button onclick="window.location.href='https://gogumama.com';" class="btn">Jisu</button>
+		</div>
+		<div id="kulibutton" class="container">
+		  <img id="innerkuli" src="kuli-transparent.png" alt="Jisu">
+		  <button onclick="window.location.href='https://kulimushibarongozi.com';" class="btn">Kulimushi</button>
 		</div>
 	</div>
 	<div id="footer">
