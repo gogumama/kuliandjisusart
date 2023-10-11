@@ -1,7 +1,16 @@
 <head>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@0;1&family=Dela+Gothic+One&display=swap" rel="stylesheet">	<style>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@0;1&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+	<style>
+	@media only screen and (max-width: 600px) {
+	  h1 {
+	    font-size: 7vw;
+	  }
+	  p {
+	  	font-size: 4vw;
+	  }
+	}
 	* {
 	    margin: 0;
 	    padding: 0;
@@ -45,7 +54,6 @@
 		position: absolute;
 		top: 70px;
 		left: 50px;
-		width: 400px;
 		overflow: hidden;
 	}
 
@@ -80,12 +88,20 @@
 		top: 120px;
 		width: 60%;
 		margin: 20px;
+		border: 3px dashed #4E1BD5;
 	}
 	.overlay-text {
 		position: absolute;
 		z-index: 3;
 		left: 70px;
 		top: 40px;
+		margin: 20px;
+	}
+	.overlay-text-lower {
+		position: absolute;
+		z-index: 3;
+		left: 270px;
+		top: 280px;
 		margin: 20px;
 	}
 	.text {
@@ -128,7 +144,12 @@
 		<img id="card" src="flower-eyes.jpeg">
 		<div class="overlay-text">
 			<h1>
-				WHAT IS THE STORY INSIDE YOURSELF YOU DESPERATELY WANT TO TELL? AND HOW CAN WE HELP YOU TELL IT?
+				WHAT IS THE STORY INSIDE YOURSELF YOU DESPERATELY WANT TO TELL?
+			</h1>
+		</div>
+		<div class="overlay-text-lower">
+			<h1>
+				AND HOW CAN WE HELP YOU TELL IT?
 			</h1>
 		</div>
 		<br>
