@@ -87,26 +87,34 @@
 		padding: -20px;
 	}
 
-	#card {
-		position: absolute;
+	.card {
+		position: relative;
 		z-index: 0;
-		top: 120px;
-		width: 60%;
+		top: 30px;
+		width: 70%;
 		margin: 20px;
 	}
 	.overlay-text {
 		position: absolute;
 		z-index: 3;
-		left: 40px;
-		top: 40px;
 		margin: 20px;
+		text-wrap: wrap;
 	}
-	.overlay-text-lower {
-		position: absolute;
-		z-index: 3;
-		left: 270px;
-		top: 280px;
-		margin: 20px;
+	.top-left {
+		left: 0px;
+		top: 0px;
+	}
+	.mid-right {
+		left: 50%;
+		top: 300px;
+	}
+	.top-right {
+		right: 0px;
+		top: 0px;
+	}
+	.mid-left {
+		right: 60%;
+		top: 200px;
 	}
 	.text {
 		margin: 50px;
@@ -121,6 +129,12 @@
 	}
 	#wrapper {
 		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.buffer {
+		position: relative;
+		height: 50px;
 	}
 
 	</style>
@@ -149,21 +163,35 @@
 	<div class="divider">
 		<div class="divider-words">TOOLS: &nbsp&nbsp  <a href="url">MUSIC</a> &nbsp ❁ &nbsp <a href="url">VISUAL ART</a> &nbsp ❁ &nbsp <a href="url">WORDS</a> &nbsp ❁ &nbsp <a href="url">YOU</a></div>
 	</div>
-	
-	<div class="section1">
-		<img id="card" src="flower-eyes.jpeg">
-		<div class="overlay-text">
-			<h2>
-				WHAT IS THE STORY INSIDE YOURSELF YOU DESPERATELY WANT TO TELL?
-			</h2>
-		</div>
-		<div class="overlay-text-lower">
-			<h2>
-				AND HOW CAN WE HELP YOU TELL IT?
-			</h2>
-		</div>
-		<br>
+	<div id="wrapper">
+		<div class="section1">
+			<img class="card" src="flower-eyes.jpeg">
+			<div class="overlay-text top-left">
+				<h2>
+					WHAT IS THE STORY INSIDE YOURSELF YOU DESPERATELY WANT TO TELL?
+				</h2>
+			</div>
+			
+			<div class="overlay-text mid-right">
+				<h2>
+					AND HOW CAN WE HELP YOU TELL IT?
+				</h2>
+			</div>
+			<br>
 
+		</div>
+		<div class="section1">
+			<img class="card" src="lying-down.jpeg" style="float:right">
+			<div class="overlay-text mid-left" style="text-align: right;">
+				<h2>
+					WHOEVER HOLDS THE VISION BECOMES A SITE OF CHANGE.
+				</h2>
+			</div>
+			<br>
+
+		</div>
+		<div class="buffer">
+		</div>
 	</div>
 
 </body>
