@@ -1,0 +1,102 @@
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@0;1&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="pinkicon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+		background-color: #DEB6FF;
+		margin: 0px;
+		padding: 0px;
+	}
+	h1 {
+		font-family: 'Dela Gothic One', sans-serif;
+		color: #FCEE94;
+		font-size: 8vw;
+		line-height: 6vw;
+		-webkit-text-stroke-width: 2px;
+ 		-webkit-text-stroke-color: #4E1BD5;
+	}
+
+	h2 {
+		font-family: 'Chakra Petch', sans-serif;
+		color: #4E1BD5;
+		font-size: 1.7rem;
+		line-height: 1.5rem;
+	}
+
+	p{
+		color: #4E1BD5;
+		font-family: 'Chakra Petch', sans-serif;
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	a {
+		color: #396719;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: #CD1BD5;
+	}
+	img {
+		width: 100%;
+	}
+	.divider {
+	  border-top: 3px solid #4E1BD5;
+	  border-bottom: 3px solid #4E1BD5;
+	  overflow: hidden;
+	  width: 100%;
+	  font-family: 'Dela Gothic One', sans-serif;
+	  background-color: #FCEE94;
+	  color: #4E1BD5;
+	  font-size: 3vw;
+	}
+	.divider-words {
+		margin-left: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.buffer {
+		position: relative;
+		height: 50px;
+	}
+	</style>
+</head>
+<body>
+	<div class="divider">
+		<div class="divider-words"><a href="https://secondfloorhardwareschool.com/infinitegohyang">INFINITE GOHYANG</a> &nbsp ❁ &nbsp <a href="https://secondfloorhardwareschool.com/infinitegohyang#rsvp">RSVP</a> &nbsp ❁ &nbsp <a href="https://secondfloorhardwareschool.com/ff-about">ABOUT</a></div>
+	</div>
+	<h1 style="margin:20px">
+		CELEBRATION OF WORDS
+	</h1>
+	<div style="margin: 20px">
+		<h2>
+			Thursday, 11.02.23 at 7pm. 1177 Chapel St.
+			<br>
+			Free open mic and zine trade. RSVP <a href="https://secondfloorhardwareschool.com/infinitegohyang#rsvp">here</a>.
+		</h2>
+		<p>
+			For the final week of Folk Festival: Infinite Gohyang, we will hold a celebration of words. Out of all of the festival’s events, we aim for this one to be accessible to the widest range of people to participate not just as audience, but as artists. One of the main messages we have throughout the festival is that anyone can make art—anyone can hold a vision, can be a site of change. People create their own designs in everything from paintings to the structure of their own lives. This is especially evident in words. In the way we speak, in the concepts we express, we prove that we have things to say.
+			<br>
+			<br>
+			How we will show this through the festival is by discovering that the folk monster also communicates through words. We will encourage people to write from the monster’s point of view, to imagine for example that they are coming across the monster’s diary or letters to other monsters far away. We will have an open mic for poetry as well as tables for people to swap zines and books. This is a collaboration with the New Haven Zine Scene, an emerging collective of zine-makers, collage artists, and art book makers in the community. We will display words in non-traditional mediums, such as: printed on clothing, painted on canvas, and recorded as voice memos. If you would like to participate or learn more about the Zine Scene, please reach out to jisusheen[at]gmail.com or message <a href="https://www.instagram.com/gogumamathoughts/">@gogumamathoughts</a> on Instagram. We have materials and tools, and would love to help anyone make books (books that are just books, books that are clothes, books that are paintings, endless possibilities).
+
+			<br><br>
+			<img src="books.jpg"/>
+			❁<i>Covers for <a href="https://kulimushibarongozi.com">Kulimushi Barongozi</a>'s book "Heare is a Book We Wrote by Kuli," published by Second Floor Hardware School.</i>
+			<br><br>
+			
+			As part of the community activities of this festival, we will also have a station to write letters to youth in local detention centers. There is a collective of local letter writers who make, collect, and distribute these letters every few months through the detention centers’ English classes. Over time they have noticed and encouraged the value of variety in these letters. Here is a situation where the unique writing style that naturally exists in each person can really do something special.
+			
+		</p>
+		
+	</div>
+	<div class="divider">
+		<div class="divider-words">SCHEDULE: &nbsp&nbsp  <a href="https://secondfloorhardwareschool.com/ff-words">10/20</a> &nbsp ❁ &nbsp <a href="https://secondfloorhardwareschool.com/ff-visual">10/27</a> &nbsp ❁ &nbsp 11/2</div>
+	</div>
+	<div style="margin:20px">
+		<p>contact: jisusheen[at]gmail.com</p>
+	</div>
+
+</body>
