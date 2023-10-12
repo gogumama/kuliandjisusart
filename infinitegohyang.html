@@ -24,7 +24,7 @@
 	  background-color: #FCEE94; /* light yellow */
 	  border: 3px solid #4E1BD5;
 	  color: #4E1BD5;
-	  padding: 10px 15px;
+	  padding: 3% 3%;
 	  text-align: center;
 	  text-decoration: none;
 	  display: inline-block;
@@ -34,7 +34,7 @@
 	}
 	a {
 		color: #396719;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 	a:hover {
 		color: #CD1BD5;
@@ -147,12 +147,74 @@
 		position: relative;
 		height: 50px;
 	}
+	#blogbutton {
+			animation: slide 20s linear alternate infinite;
+			z-index: 3;
+		}
+	#blogimage {
+			animation: spin 20s linear forwards infinite;
+			z-index: 3;
+		}
+	@keyframes slide {
+		0% {
+			transform: translate(200px);}
+		100% {
+			transform: translate(300px, 500px);
+		}
+	}
+	@keyframes spin {
+			0% {}
+			100% {
+				transform: rotateZ(360deg);
+			}
+		}
+/* Container needed to position the button. Adjust the width as needed */
+		.container {
+		  position: absolute;
+		  width: 100px;
+		  float: right;
+
+		}
+
+		/* Make the image responsive */
+		.container img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		/* Style the button and place it in the middle of the container/image */
+		.container .btn {
+		  position: absolute;
+		  top: 30%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  background-color: #FFFFFF00;
+		  color: #DEB6FF;
+		  font-size: 28px;
+		  padding: 12px 24px;
+		  border: none;
+		  cursor: pointer;
+		  border-radius: 5px;
+		  font-family: 'Dela Gothic One', sans-serif;
+		  -webkit-text-stroke-width: 2px;
+ 		 -webkit-text-stroke-color: #4E1BD5;
+		}
+
+		.container .btn:hover {
+		  background-color: #DEB6FF;
+		  color: #FCEE94;
+		  border: 2px solid #4E1BD5;
+		}
 
 	</style>
 
 </head>
 <body>
-
+	<div id="blogbutton" class="container">
+		  <img id="blogimage" src="yellow-flower.png" alt="Blog">
+		  <button onclick="window.location.href='https://gogumama.com';" class="btn">BLOG</button>
+		</div>
 	<div class="divider">
 		<div class="divider-words">3 DAYS OVER 3 WEEKS. DOWNTOWN NEW HAVEN.</div>
 	</div>
@@ -181,7 +243,7 @@
 	    </button>
 	</div>
 	<div class="divider">
-		<div class="divider-words">TOOLS: &nbsp&nbsp  <a href="url">MUSIC</a> &nbsp ❁ &nbsp <a href="url">VISUAL ART</a> &nbsp ❁ &nbsp <a href="url">WORDS</a> &nbsp ❁ &nbsp <a href="url">YOU</a></div>
+		<div class="divider-words">TOOLS: &nbsp&nbsp  <a href="url">MUSIC</a> &nbsp ❁ &nbsp <a href="url">VISUAL ART</a> &nbsp ❁ &nbsp <a href="url">WORDS</a></div>
 	</div>
 	<div id="wrapper">
 		<div class="section1">
@@ -215,6 +277,5 @@
 		<a id="rsvp"/>
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWikEn_WWxMGdrCzW9iNiKSczfH0Uc7EZoSW-xt576cqutog/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 	</div>
-
-
+	
 </body>
