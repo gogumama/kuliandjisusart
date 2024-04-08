@@ -1,0 +1,112 @@
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Nabla&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background-image: url("redpawn.jpeg");
+			margin: 30px;
+			text-align: center;
+		}
+		h1 {
+			font-family: "Nabla";
+		}
+		p {
+			color: white;
+			font-family: Chivo;
+		}
+		.container {
+			padding-top: 10px;
+		}
+		.container .button {
+		  font-family: "Chivo";
+		}
+		.container .button:hover {
+		  color: hotpink;
+		}
+		#title {
+			font-size: 6em;
+		}
+		.faces {
+			width: 100%;
+			border-radius: 20px;
+		}
+		.child {
+			width: 30%;
+			display: inline-block;
+			border-style: dashed;
+			border-color: lightpink;
+			border-width: thick;
+			padding: 20px;
+			border-radius: 30px;
+		}
+		.child:hover {
+			cursor: pointer;
+		}
+		.top-left:hover {
+			background-image: url("yellow-top-left.jpeg");
+		}
+		.top-right:hover {
+			background-image: url("yellow-top-right.jpeg");
+		}
+		.bottom-left:hover {
+			background-image: url("yellow-bottom-left.jpeg");
+		}
+		.bottom-right:hover {
+			background-image: url("yellow-bottom-right.jpeg");
+		}
+		.divider {
+			width:5%;
+			display: inline-block;
+		}
+		#title{
+			animation: slide 3s ease-in-out alternate infinite;
+		}
+		@keyframes slide {
+			0% {
+				transform: translate(0px);}
+			100% {
+				transform: translate(0px, 30px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div onclick="window.location.href='https://gogumama.com';" class="child top-left">
+			<img class="faces" src="leaf.jpeg">
+			<div class="container">
+			  <p>About</p>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div onclick="window.location.href='https://gogumama.com';" class="child top-right">
+			<img class="faces" src="painting.jpeg">
+			<div class="container">
+			  <p>Kuli's Paint Job</p>
+			</div>
+		</div>
+	</div>
+	<div id="section-1">
+		<h1 id="title">
+			Kulimushi Barongozi
+		</h1>
+	</div>
+	<div>
+		<div onclick="window.location.href='https://gogumama.com';" class="child bottom-left">
+			<img class="faces" src="ives.jpeg">
+			<div class="container">
+			  <p>Shop</p>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div onclick="window.location.href='https://gogumama.com';" class="child bottom-right">
+			<img class="faces" src="phoof.jpeg">
+			<div class="container">
+			 <p>Work</p>
+			</div>
+		</div>
+	</div>
+	<div style="height: 100px">
+	</div>
+</body>
